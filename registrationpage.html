@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="registrationpage.css">
+    <title>Registration page</title>
+</head>
+
+<body>
+    <header>
+        <div class="left"><h2> Blume </h2></div>
+    </header>
+    <main>
+        <h2>Student Registration Form</h2>
+        <form method="post" class="form">
+            <div>
+                <label for="profile">Profile Photo</label>
+                <input type="file" name="profile" id="Photo" value="ProfilePhoto">
+            </div>
+            <div>
+                <label class="name" for="Fname">First Name</label>
+                <input type="text" name="Fname" id="fname" required minlength="6" maxlength="30" size="30">
+                <span>(max 30 characters a-z and A-Z)</span>
+            </div>  
+
+            <div>
+                <label class="name" for="Lname">Last Name</label>
+                <input type="text" name="Lname" id="lname" required minlength="6" maxlength="30" size="30">
+                <span>(max 30 characters a-z and A-Z)</span>
+            </div>
+
+            <div>
+                <label for="DOB" class="dob">Date of Birth</label>
+                <input type="date" id="DOB" name="DOB">
+            </div>
+
+            <div>
+                <label class="email">Email</label>
+                <input type="email" name="email" id="Email">
+            </div>
+
+            <div>
+                <label for="mobileno">Mobile Number</label>
+                <input type="text" name="mobileno" id="Mobile" required minlength="10" maxlength="10" size="10">
+                <span>(10 Digit Number)</span>
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <label for="male" id="m">Male</label> <input type="radio" name="gender" class="genderCheckbox">
+                <label for="female">Female</label> <input type="radio" name="gender" class="genderCheckbox">
+                <label for="trans">Trans</label> <input type="radio" name="gender" class="genderCheckbox">
+            </div>
+
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="Address">
+            </div>
+
+            <div>
+                <label for="city">City</label>
+                <input type="text" name="city" id="City" required maxlength="30" size="30">
+                <span>(max 30 characters a-z and A-Z)</span>
+            </div>
+
+            <div>
+                <label for="pin">Pin Code</label>
+                <input type="text" name="pin" id="Pin">
+            </div>
+
+            <div>
+                <label for="state">State</label>
+                <input type="text" name="state" id="State" required maxlength="30" size="30">
+                <span>(max 30 characters a-z and A-Z)</span>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <input type="text" name="country" id="Country" placeholder="INDIA" disabled>
+            </div>
+            <div>
+                <label for="hobbies">Hobbies</label>
+                <label for="drawing" class="drawing">Drawing</label> <input class="check" type="checkbox" name="Hobbies" id="drawing">
+                <label for="dancing">Dancing</label> <input  class="check" type="checkbox" name="Hobbies" id="dancing">
+                <label for="singing">Singing</label> <input  class="check" type="checkbox" name="Hobbies" id="singing">
+                <label for="poetry">Poetry</label> <input  class="check" type="checkbox" name="Hobbies" id="poetry">
+                <label for="other">Other</label> <input  class="check" type="text" name="Hobbies" id="other" placeholder="Ex- Horse Riding">
+            </div>
+
+            <div>
+                <label  for="qualification">Qualification</label>
+                    <table class="table"> 
+                    <tr>
+                    <td align="center"><label>Sl.No.</label></td>
+                    <td align="center"><label>Examination</label></td>
+                    <td align="center"><label>Board</label></td>
+                    <td align="center"><label>Percentage</label></td>
+                    <td align="center"><label>Year of Passing</label></td>
+                    </tr>
+                     
+                    <tr>
+                    <td>1</td>
+                    <td><label >Class X </label> </td>
+                    <td><input class="box" type="text" name="ClassX_Board" maxlength="30" /></td>
+                    <td><input class="box" type="text" name="ClassX_Percentage" maxlength="30" /></td>
+                    <td><input class="box" type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+                    </tr>
+                     
+                    <tr>
+                    <td>2</td>
+                    <td><label >Class XII</label></td>
+                    <td><input class="box" type="text" name="ClassXII_Board" maxlength="30" /></td>
+                    <td><input class="box" type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+                    <td><input class="box" type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+                    </tr>
+
+                    </table>
+                    
+            </div>
+            <div>
+                <label class="course" for="course">Courses Applied for</label>
+                <ul>
+                    <li><input class="edu"type="radio" name="course" id="BE"><label class="branch" for="BE">Bachlors of Enginnering</label></li>
+                    <li><input class="edu" type="radio" name="course" id="B.com"><label class="branch" for="B.Com">Bachelor of Commerce</label></li>
+                    <li><input class="edu" type="radio" name="course" id="B.SC"><label class="branch" for="B.SC">Bachelor of Science</label></li>
+                    <li><input class="edu" type="radio" name="course" id="B.A"><label class="branch" for="B.A">Bachelor of Art</label></li>
+                </ul>
+                
+            </div>
+            <div>  
+                <input id="submit" class="button" type="submit" value="Register now"/>
+                <input id="reset" class="button" type="reset" value="Reset now"/>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
