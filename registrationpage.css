@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+header{
+    display: flex;
+}
+.left h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form{
+    width: 1230px;
+    border: 1px solid lightslategray;
+    margin: 30px auto;
+    background-color: lightyellow;
+    font-size: 20px;
+    line-height: 50px;
+}
+label{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+div{
+    margin-left: 20px;
+}
+span{
+    font-size: 17px;
+    text-align: right;
+}
+#Photo{
+    margin-left: 150px;
+    height: 30px;
+}
+#fname{
+    margin-left: 175px;
+    height: 25px;
+}
+#lname{
+    margin-left: 179px;
+    height: 25px;
+}
+#DOB{
+    margin-left: 155px;
+    height: 25px;
+    width: 230px;
+}
+#Email{
+    margin-left: 229px;
+    height: 25px;
+    width: 230px;
+}
+#Mobile{
+    margin-left: 127px;
+    height: 25px;
+    width: 230px;
+}
+#m{
+    margin-left: 209px;
+}
+.genderCheckbox{
+    width: 1.5em;
+    height: 1.5em; 
+}
+
+#Address{  
+    margin: 20px 202px;
+    height: 50px;
+    width: 230px;  
+}
+#City{
+    margin-left: 243px;
+    height: 25px;
+    width: 230px;  
+}
+#Pin{
+    margin-left: 195px;
+    height: 25px;
+    width: 230px; 
+}
+#State{
+    margin-left: 230px;
+    height: 25px;
+    width: 230px; 
+}
+#Country{
+    margin-left: 202px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.drawing{
+    margin-left: 198px;
+}
+#other{
+    height: 25px;
+    width: 230px; 
+}
+.check{
+    width: 1.5em;
+    height: 1.5em;
+}
+.table{
+    margin: -30px 283px;
+    margin-bottom: 20px;
+}
+.box{
+    height: 25px;
+    width: 230px;
+}
+.edu{
+    margin-left: 267px;
+    width: 1.5em;
+    height: 1.5em;
+}
+li{
+    list-style:none;
+}
+.branch{
+    margin-left: 30px;
+}
+
+
+div .button{
+    padding-left: 0;
+    background-color: #ff4902;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #090101;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    width: 130px;
+    height: 35px;
+    margin: 40px;
+    outline: none;
+    font-size: 17px;  
+}
+#submit{
+    margin-left: 350px;
+}
+#reset{
+    margin-left: 5px;
+}
+.button:hover{
+    box-shadow: 2px 2px 20px rgb(49, 38, 38);
+    background-color: #7799d4;
+ }
